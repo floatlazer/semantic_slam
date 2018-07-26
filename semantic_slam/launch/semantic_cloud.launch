@@ -1,0 +1,4 @@
+<launch>
+<rosparam file="$(find semantic_slam)/params/semantic_cloud.yaml" command="load"/>
+<node pkg="semantic_cloud" type="semantic_cloud.py" name="semantic_cloud" output="screen"/>
+</launch>

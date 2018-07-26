@@ -1,0 +1,12 @@
+<launch>
+
+<rosparam file="$(find semantic_slam)/params/semantic_cloud.yaml" command="load"/>
+<node pkg="semantic_cloud" type="semantic_cloud.py" name="semantic_cloud" output="screen"/>
+
+<rosparam file="$(find semantic_slam)/params/octomap_generator.yaml" command="load"/>
+<node pkg="octomap_generator" type="octomap_generator" name="octomap_generator" output="screen"/>
+
+<!--rviz-->
+<node pkg="rviz" type="rviz" name="rviz" args="-d $(find semantic_slam)/semantic_mapping.rviz"/>
+
+</launch>

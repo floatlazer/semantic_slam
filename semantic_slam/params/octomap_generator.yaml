@@ -1,0 +1,12 @@
+octomap:
+    pointcloud_topic: "/semantic_pcl/semantic_pcl"
+    world_frame_id: "/world"
+    resolution: 0.02
+    max_range: 5.0
+    raycast_range: 2.0
+    clamping_thres_min: 0.12
+    clamping_thres_max: 0.97
+    occupancy_thres: 0.5
+    prob_hit: 0.7
+    prob_miss: 0.4
+    tree_type: 0

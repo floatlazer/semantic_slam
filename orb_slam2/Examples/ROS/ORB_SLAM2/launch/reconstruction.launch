@@ -1,0 +1,9 @@
+<launch>
+<node pkg="topic_tools" type="relay" name="depth_relay" args="/camera/depth_registered/points /cloud_in"/>
+<node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
+    <param name="frame_id" value="/world"/>
+    <param name="resolution" value="0.05"/>
+    <param name="height_map" value="false"/>
+    <param name="colored_map" value="true"/>
+</node>
+</launch>
