@@ -1,3 +1,7 @@
+/**
+* \author Xuan Zhang
+* \data Mai-July 2018
+*/
 #ifndef SEMANTICS_MAX_H
 #define SEMANTICS_MAX_H
 

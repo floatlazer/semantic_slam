@@ -1,3 +1,7 @@
+/**
+* \author Xuan Zhang
+* \data Mai-July 2018
+*/
 #ifndef SEMANTIC_OCTREE_H
 #define SEMANTIC_OCTREE_H
 

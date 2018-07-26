@@ -3,6 +3,8 @@
 Take in an image (rgb or rgb-d)
 Use CNN to do semantic segmantation
 Out put a cloud point with semantic color registered
+\author Xuan Zhang
+\date May - July 2018
 """
 
 from __future__ import division

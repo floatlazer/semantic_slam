@@ -1,8 +1,13 @@
+/**
+* \author Xuan Zhang
+* \data Mai-July 2018
+*/
 #ifndef SEMANTICS_BAYESIAN_H
 #define SEMANTICS_BAYESIAN_H
 
 #include <octomap/ColorOcTree.h>
 #define NUM_SEMANTICS 3
+
 
 namespace octomap
 {

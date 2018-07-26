@@ -15,6 +15,8 @@ class PointType(Enum):
 class ColorPclGenerator:
     '''
     Generate a ros point cloud given a color image and a depth image
+    \author Xuan Zhang
+    \date May - July 2018
     '''
     def __init__(self, intrinsic, width = 640, height = 480, frame_id = "/camera_rgb_optical_frame", point_type = PointType.SEMANTICS_BAYESIAN):
         '''

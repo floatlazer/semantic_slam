@@ -1,3 +1,7 @@
+/**
+* \author Xuan Zhang
+* \data Mai-July 2018
+*/
 namespace octomap {
 
   // Tree implementation  --------------------------------------
