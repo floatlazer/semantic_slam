@@ -1,4 +1,4 @@
-# Camera calibration and distortion parameters (OpenCV)
+# Camera intrinsic matrix parameters (OpenCV)
 camera:
   fx: 544.771755
   fy: 546.966312

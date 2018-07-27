@@ -8,9 +8,9 @@ from enum import Enum
 #import time
 
 class PointType(Enum):
-    COLOR = 1
-    SEMANTICS_MAX = 2
-    SEMANTICS_BAYESIAN = 3
+    COLOR = 0
+    SEMANTICS_MAX = 1
+    SEMANTICS_BAYESIAN = 2
 
 class ColorPclGenerator:
     '''
