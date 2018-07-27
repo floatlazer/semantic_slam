@@ -87,7 +87,7 @@ The run ORB_SLAM2 node.
 roslaunch semantic_slam slam.launch
 ```
 
-When the slam system has finished initialization and the camera trajectory in the viewer is reasonable, you can run the semantic_cloud node and the octomap_generator node.
+When the slam system has finished initialization and the camera trajectory in the viewer is reasonable, you can run the semantic_cloud node and the octomap_generator node. You will have to provide trained models, see links below.
 
 ```sh
 roslaunch semantic_slam semantic_mapping.launch
@@ -102,6 +102,10 @@ If you are constructing a semantic map, you can toggle the display color between
 ```sh
 rosservice call toggle_use_semantic_color
 ```
+# Trained models
+
+- [Model trained on ade20k dataset](https://drive.google.com/file/d/1u_BEWdVIYiDnpVmAxwME1z3rnWWkjxm5/view?usp=sharing)
+- [Model fine tuned on SUNRGBD dataset](https://drive.google.com/file/d/1t26t2VHNOzmjH-0lDTdYzXBACOV_4-eL/view?usp=sharing)
 
 # Configuration
 
