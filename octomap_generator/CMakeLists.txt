@@ -15,24 +15,19 @@ ENDIF(OCTOMAP_OMP)
 
 set(PACKAGE_DEPENDENCIES
   roscpp
-  visualization_msgs
   sensor_msgs
   pcl_ros
   pcl_conversions
-  nav_msgs
-  std_msgs
   std_srvs
-  octomap_ros
   octomap_msgs
-  dynamic_reconfigure
 )
 
-find_package(catkin REQUIRED COMPONENTS ${PACKAGE_DEPENDENCIES})
 
 find_package(PCL REQUIRED QUIET COMPONENTS common sample_consensus io segmentation filters)
 
 find_package(octomap REQUIRED)
-add_definitions(-DOCTOMAP_NODEBUGOUT)
+
+find_package(catkin REQUIRED COMPONENTS ${PACKAGE_DEPENDENCIES})
 
 include_directories(
   include

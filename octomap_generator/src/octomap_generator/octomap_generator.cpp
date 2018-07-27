@@ -46,7 +46,7 @@ void OctomapGenerator<CLOUD, OCTREE>::insertPointCloud(const pcl::PCLPointCloud2
   // Convert to PCL pointcloud
   CLOUD pcl_cloud;
   pcl::fromPCLPointCloud2(*cloud_filtered, pcl_cloud);
-  std::cout << "Voxel filtered cloud size: "<< pcl_cloud.size() << std::endl;
+  //std::cout << "Voxel filtered cloud size: "<< pcl_cloud.size() << std::endl;
   // Transform coordinate
   pcl::transformPointCloud(pcl_cloud, pcl_cloud, sensorToWorld);
 
@@ -101,7 +101,7 @@ void OctomapGenerator<PCLColor, ColorOcTree>::updateColorAndSemantics(PCLColor* 
     }
   }
   octomap::ColorOcTreeNode* node = octomap_.search(pcl_cloud->begin()->x, pcl_cloud->begin()->y, pcl_cloud->begin()->z);
-  std::cout << "Example octree node: " << std::endl;
+  //std::cout << "Example octree node: " << std::endl;
   //std::cout << "Color: " << node->getColor()<< std::endl;
 }
 
@@ -125,9 +125,9 @@ void OctomapGenerator<PCLSemanticsMax, SemanticsOctreeMax>::updateColorAndSemant
     }
   }
     SemanticsOcTreeNodeMax* node = octomap_.search(pcl_cloud->begin()->x, pcl_cloud->begin()->y, pcl_cloud->begin()->z);
-    std::cout << "Example octree node: " << std::endl;
-    std::cout << "Color: " << node->getColor()<< std::endl;
-    std::cout << "Semantics: " << node->getSemantics() << std::endl;
+    //std::cout << "Example octree node: " << std::endl;
+    //std::cout << "Color: " << node->getColor()<< std::endl;
+    //std::cout << "Semantics: " << node->getSemantics() << std::endl;
 }
 
 template<>
@@ -153,9 +153,9 @@ void OctomapGenerator<PCLSemanticsBayesian, SemanticsOctreeBayesian>::updateColo
     }
   }
     SemanticsOcTreeNodeBayesian* node = octomap_.search(pcl_cloud->begin()->x, pcl_cloud->begin()->y, pcl_cloud->begin()->z);
-    std::cout << "Example octree node: " << std::endl;
-    std::cout << "Color: " << node->getColor()<< std::endl;
-    std::cout << "Semantics: " << node->getSemantics() << std::endl;
+    //std::cout << "Example octree node: " << std::endl;
+    //std::cout << "Color: " << node->getColor()<< std::endl;
+    //std::cout << "Semantics: " << node->getSemantics() << std::endl;
 }
 
 template<class CLOUD, class OCTREE>

@@ -11,7 +11,7 @@ camera:
 semantic_pcl:
   color_image_topic: "/camera/rgb/image_raw"
   depth_image_topic: "/camera/depth_registered/image_raw"
-  point_type: 1
+  point_type: 0
   frame_id: "/camera_rgb_optical_frame"
   dataset: "ade20k" # sunrgbd
   #dataset: "sunrgbd" # sunrgbd

@@ -5,7 +5,7 @@ Semantic SLAM can generate a 3D voxel based semantic map using only a hand holdi
 
 Semantic octomap             |  RGB octomap
 :-------------------------:|:-------------------------:
-![alt text](docs/images/max.png)  | ![alt text](docs/images/rgb.png) 
+![alt text](docs/images/max.png)  | ![alt text](docs/images/rgb.png)
 
 
 ### Project Report & Demo:
@@ -125,7 +125,7 @@ namespace octomap
   - Maximum distance of a point from camera to be inserted into octomap, in meters.
 - raycast_range
   - Maximum distance of a point from camera be perform raycasting to clear free space, in meters.
-- clamping_thres_min 
+- clamping_thres_min
   - Octomap parameter, minimum octree node occupancy during update.   
 - clamping_thres_max
   -  Octomap parameter, maximum octree node occupancy during update.
@@ -135,6 +135,8 @@ namespace octomap
   - Octomap parameter, hitting probability of the sensor model.
 - prob_miss
   - Octomap parameter, missing probability of the sensor model.
+- save_path
+  - Octomap saving path. (not tested)
 
 ### Parameters for semantic_cloud node (semantic_cloud.yaml)
 
@@ -159,7 +161,3 @@ namespace semantic_pcl
   - Dataset on which PSPNet is trained. "ade20k" or "sunrgbd".
 - model_path
   - Path to pytorch trained model.
-
-
-
-

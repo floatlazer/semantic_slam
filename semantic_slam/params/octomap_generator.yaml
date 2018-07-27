@@ -1,6 +1,6 @@
 octomap:
     pointcloud_topic: "/semantic_pcl/semantic_pcl"
-    tree_type: 1
+    tree_type: 0
     world_frame_id: "/world"
     resolution: 0.02
     max_range: 5.0
@@ -10,3 +10,4 @@ octomap:
     occupancy_thres: 0.5
     prob_hit: 0.7
     prob_miss: 0.4
+    save_path : "~/map.bt"
