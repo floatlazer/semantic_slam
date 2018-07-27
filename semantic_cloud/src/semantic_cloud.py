@@ -25,6 +25,10 @@ import time
 from skimage.transform import resize
 import cv2
 
+import torch
+from ptsemseg.models import get_model
+from ptsemseg.utils import convert_state_dict
+
 def color_map(N=256, normalized=False):
     """
     Return Color Map in PASCAL VOC format (rgb)
@@ -98,9 +102,6 @@ class SemanticCloud:
         self.img_width, self.img_height = rospy.get_param('/camera/width'), rospy.get_param('/camera/height')
         # Set up CNN is use semantics
         if self.point_type is not PointType.COLOR:
-            import torch
-            from ptsemseg.models import get_model
-            from ptsemseg.utils import convert_state_dict
             print('Setting up CNN model...')
             # Set device
             self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
