@@ -39,25 +39,15 @@ sudo apt-get install ros-kinetic-openni2-launch
 
 - ORB_SLAM2
 
-We use [ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2) as SLAM backend. Please refer to the official repo for installation dependency.
-
-- Octomap
-
-```sh
-sudo apt-get install ros-kinetic-octomap
-```
-
-- Octomap rviz plugins
-
-```sh
-sudo apt-get install ros-kinetic-octomap-kinetic-plugins
-```
+We use [ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2) as SLAM backend. Please refer to the official repo for installation dependencies.
 
 - PyTorch 0.4.0
 
-- To be finished...
+- For other dependencies, please see [semantic_slam/package.xml](./semantic_slam/package.xml)
 
 # Installation
+
+### Build ORB_SLAM2
 
 After installing dependencies for ORB_SLAM. You should first build the library.
 
@@ -66,7 +56,13 @@ cd ORB_SLAM2
 ./build.sh
 ```
 
-Then build the package.
+### Install dependencies
+
+```sh
+rosdep install semantic_slam
+```
+
+### Make
 
 ```sh
 cd <your_catkin_work_space>
