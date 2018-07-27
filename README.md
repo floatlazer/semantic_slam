@@ -62,7 +62,7 @@ sudo apt-get install ros-kinetic-octomap-kinetic-plugins
 After installing dependencies for ORB_SLAM. You should first build the library.
 
 ```sh
-cd orb_slam2
+cd ORB_SLAM2
 ./build.sh
 ```
 
