@@ -73,21 +73,25 @@ cd <your_catkin_work_space>
 catkin_make
 ```
 
-# Run
+# Run with camera
 
-First you should have a rgbd camera running.
+### Launch rgbd camera
 
 ```sh
 roslaunch semantic_slam camera.launch
 ```
 
-The run ORB_SLAM2 node.
+### Run ORB_SLAM2 node
 
 ```sh
 roslaunch semantic_slam slam.launch
 ```
 
-When the slam system has finished initialization and the camera trajectory in the viewer is reasonable, you can run the semantic_cloud node and the octomap_generator node. You will have to provide trained models, see links below.
+When the slam system has finished initialization, try to move the camera and check if the camera trajectory in the viewer is reasonable, reset SLAM if not. 
+
+### Run semantic_mapping
+
+You can now run the semantic_cloud node and the octomap_generator node. You will have to provide trained models, see links below.
 
 ```sh
 roslaunch semantic_slam semantic_mapping.launch
@@ -102,6 +106,25 @@ If you are constructing a semantic map, you can toggle the display color between
 ```sh
 rosservice call toggle_use_semantic_color
 ```
+# Run with ros bag
+
+If you want to test semantic mapping without a camera, you can also run a rosbag.
+
+### Download rosbag with camera position (tracked by SLAM)
+
+[demo.bag](https://drive.google.com/file/d/1j12c_Fruu-ylO1FHYC4sbmlG9IutYJQg/view?usp=sharing)
+
+### Run semantic_mapping
+
+```sh
+roslaunch semantic_slam semantic mapping.launch
+```
+### Play ROS bag
+
+```sh
+rosbag play semantic_mapping
+```
+
 # Trained models
 
 - [Model trained on ade20k dataset](https://drive.google.com/file/d/1u_BEWdVIYiDnpVmAxwME1z3rnWWkjxm5/view?usp=sharing)
