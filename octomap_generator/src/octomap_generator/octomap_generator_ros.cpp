@@ -117,7 +117,10 @@ int main(int argc, char** argv)
   ros::NodeHandle nh;
   OctomapGeneratorNode octomapGeneratorNode(nh);
   ros::spin();
-  octomapGeneratorNode.save("/home/interns/xuanzhang/octomaps/map.bt");
+  std::string save_path;
+  nh.getParam("/octomap/save_path", save_path);
+
+  octomapGeneratorNode.save(save_path.c_str());
   ROS_INFO("OctoMap saved.");
   return 0;
 }

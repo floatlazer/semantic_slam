@@ -1,4 +1,4 @@
-# Camera calibration and distortion parameters (OpenCV)
+# Camera intrinsic matrix parameters (OpenCV)
 camera:
   fx: 544.771755
   fy: 546.966312
@@ -11,8 +11,9 @@ camera:
 semantic_pcl:
   color_image_topic: "/camera/rgb/image_raw"
   depth_image_topic: "/camera/depth_registered/image_raw"
-  point_type: 0
+  point_type: 1
   frame_id: "/camera_rgb_optical_frame"
   dataset: "ade20k" # sunrgbd
+  #dataset: "sunrgbd" # sunrgbd
   model_path: "/home/interns/xuan/models/pspnet_50_ade20k.pth"
   #model_path: "/home/interns/xuan/models/pspnet_sunrgbd_best_model180625_5k.pth"

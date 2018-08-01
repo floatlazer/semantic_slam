@@ -10,30 +10,24 @@ Out put a cloud point with semantic color registered
 from __future__ import division
 from __future__ import print_function
 
-import roslib
 import sys
 import rospy
-from std_msgs.msg import String
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
 
-import os
-import torch
-import argparse
 import numpy as np
-import torch.nn as nn
 
-from ptsemseg.models import get_model
-from ptsemseg.utils import convert_state_dict
 from sensor_msgs.msg import PointCloud2
 from color_pcl_generator import PointType, ColorPclGenerator
 import message_filters
 import time
-from torchvision import transforms
 
 from skimage.transform import resize
 import cv2
-import matplotlib.pyplot as plt
+
+import torch
+from ptsemseg.models import get_model
+from ptsemseg.utils import convert_state_dict
 
 def color_map(N=256, normalized=False):
     """
