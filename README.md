@@ -23,7 +23,7 @@ This work cannot be done without many open source projets. Special thanks to
 
 # License
 
-Semantic SLAM is released under a [MIT license](./LICENSE.txt) except for [ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2) which is released under a [GPLv3 license](./ORB_SLAM2/License-gpl.txt).
+This project is released under a [GPLv3 license](./LICENSE.txt).
 
 # Overview
 
@@ -83,7 +83,7 @@ roslaunch semantic_slam camera.launch
 roslaunch semantic_slam slam.launch
 ```
 
-When the slam system has finished initialization, try to move the camera and check if the camera trajectory in the viewer is reasonable, reset SLAM if not. 
+When the slam system has finished initialization, try to move the camera and check if the camera trajectory in the viewer is reasonable, reset SLAM if not.
 
 ### Run semantic_mapping
 
