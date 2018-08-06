@@ -11,7 +11,7 @@ Semantic octomap             |  RGB octomap
 ### Project Report & Demo:
 
 - [Demo](https://youtu.be/Xoo3XqMXpHA)
-- Project report: comming soon.
+- Project report: coming soon.
 
 ### Acknowledgement
 
