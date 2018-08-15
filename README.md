@@ -18,7 +18,7 @@ Semantic octomap             |  RGB octomap
 This work cannot be done without many open source projets. Special thanks to
 
 - [ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2), used as our SLAM backend.
-- [pytorch-semseg](https://github.com/meetshah1995/pytorch-semseg/tree/master/ptsemseg), used as our semantic segmantation library.
+- [pytorch-semseg](https://github.com/meetshah1995/pytorch-semseg), used as our semantic segmantation library.
 - [octomap](https://github.com/OctoMap/octomap), used as our map representation.
 - [pcl library](http://pointclouds.org/), used for point cloud processing.
 
