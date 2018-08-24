@@ -11,7 +11,7 @@ Semantic octomap             |  RGB octomap
 ### Project Report & Demo:
 
 - [[Demo](https://youtu.be/IwQaRnFmRuU)]
-- [[Project report](https://drive.google.com/file/d/1iVR4wu9PGoJAn9zk0oARaLDWNdhkCjQr/view?usp=sharing)]
+- Project report [[Google](https://drive.google.com/file/d/1iVR4wu9PGoJAn9zk0oARaLDWNdhkCjQr/view?usp=sharing)] [[Baidu](https://pan.baidu.com/s/1OvlkjUQs_qIySYCvilUCqw)]
 
 ### Acknowledgement
 
