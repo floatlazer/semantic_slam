@@ -10,8 +10,8 @@ Semantic octomap             |  RGB octomap
 
 ### Project Report & Demo:
 
-- [[Demo](https://youtu.be/IwQaRnFmRuU)]
-- Project report [[Google](https://drive.google.com/file/d/1iVR4wu9PGoJAn9zk0oARaLDWNdhkCjQr/view?usp=sharing)] [[Baidu](https://pan.baidu.com/s/1OvlkjUQs_qIySYCvilUCqw)]
+- Demo: [[Youtube](https://youtu.be/IwQaRnFmRuU)] [[Youku](https://v.youku.com/v_show/id_XMzc5NTI0OTcyNA==.html?spm=a2hzp.8244740.0.0)]
+- Project report: [[Google](https://drive.google.com/file/d/1iVR4wu9PGoJAn9zk0oARaLDWNdhkCjQr/view?usp=sharing)] [[Baidu](https://pan.baidu.com/s/1OvlkjUQs_qIySYCvilUCqw)]
 
 ### Acknowledgement
 
