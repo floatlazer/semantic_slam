@@ -119,13 +119,19 @@ roslaunch semantic_slam semantic mapping.launch
 ### Play ROS bag
 
 ```sh
-rosbag play semantic_mapping
+rosbag play demo.bag
 ```
 
 # Trained models
 
 - [Model trained on ade20k dataset](https://drive.google.com/file/d/1u_BEWdVIYiDnpVmAxwME1z3rnWWkjxm5/view?usp=sharing)
 - [Model fine tuned on SUNRGBD dataset](https://drive.google.com/file/d/1t26t2VHNOzmjH-0lDTdYzXBACOV_4-eL/view?usp=sharing)
+
+# Run time
+
+Evaluation is done on a computer with 6 Xeon 1.7 GHz CPU and one GeForce GTX Titan Z GPU. Input image size is 640×480 recorded by a camera Asus Xtion Pro.
+
+When our system works together, ORB-SLAM works at about 15 Hz (the setting is 30 Hz). Point cloud generation alone can run at 30 Hz. Semantic segmentation runs at about 2 to 3 Hz. Octomap insertion and visualization works at about 1 Hz. Please refer to section 3.6.2 of the project report for more analysis of run times.
 
 # Configuration
 
