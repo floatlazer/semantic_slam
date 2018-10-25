@@ -1,5 +1,7 @@
 # Semantic SLAM
-***Author:*** Xuan Zhang
+***Author:*** Xuan Zhang, ***Supervisor:*** David Filliat
+
+Research internship @ENSTA ParisTech
 
 Semantic SLAM can generate a 3D voxel based semantic map using only a hand held RGB-D camera (e.g. Asus xtion) in real time. We use ORB_SLAM2 as SLAM backend, a CNN (PSPNet) to produce semantic prediction and fuse semantic information into a octomap. Note that our system can also be configured to generate rgb octomap without semantic information.
 
