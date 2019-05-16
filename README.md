@@ -135,6 +135,20 @@ Evaluation is done on a computer with 6 Xeon 1.7 GHz CPU and one GeForce GTX Tit
 
 When our system works together, ORB-SLAM works at about 15 Hz (the setting is 30 Hz). Point cloud generation alone can run at 30 Hz. Semantic segmentation runs at about 2 to 3 Hz. Octomap insertion and visualization works at about 1 Hz. Please refer to section 3.6.2 of the project report for more analysis of run times.
 
+# Citation
+
+To cite this project in your research:
+
+```
+    @misc{semantic_slam,
+      author = {Xuan, Zhang and David, Filliat},
+      title = {Real-time voxel based 3D semantic mapping with a hand held RGB-D camera},
+      year = {2018},
+      publisher = {GitHub},
+      journal = {GitHub repository},
+      howpublished = {\url{https://github.com/floatlazer/semantic_slam}},
+    }
+```
 # Configuration
 
 You can change parameters for launch. Parameters are in `./semantic_slam/params` folder.
